@@ -1,0 +1,268 @@
+
+body { /* DREAMWEAVER, then modified. */
+  font-family: 100%/1.4 Verdana, Geneva, sans-serif;
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0; 
+	color: #000;
+}
+
+ul, ol, dl { 
+	padding: 0; /* zero the padding and margin - prevents bugs from variation between browsers. */
+	margin: 0; /* DREAMWEAVER. */
+}
+
+h1, h2, h3, h4, h5, h6, p {  /* DREAMWEAVER. */
+	padding-right: 15px;
+	padding-left: 15px; /* padding on the insides of blokc elements instead of the blocks themselves */
+  margin-top: 0;
+}
+
+
+/* Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, article, figure { /* DREAMWEAVER. */
+  display: block;
+}
+
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link { /* DREAMWEAVER. and modified*/
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited { /* DREAMWEAVER. and modified*/
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none; /* DREAMWEAVER. and modified*/
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container { /* DREAMWEAVER. and modified*/
+	width: 1024px;
+	background-color: #8FBCDB;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+header { /* DREAMWEAVER. and modified*/
+	background-color: #8FBCDB;
+}
+
+.sidebar { /* DREAMWEAVER. and modified*/
+	float: right;
+	width: 160px;
+	background-color: #8FBCDB;
+
+}
+
+.content { /* DREAMWEAVER. and modified*/
+	padding: 10px 0;
+	width: 864px;
+	float: right;
+	background-color: #C0C0C0;
+	
+}
+
+aside { /* DREAMWEAVER. and modified*/
+	float: right;
+	width: 160px;
+	padding: 3px 0;
+
+}
+
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav { /* DREAMWEAVER. and modified*/
+	list-style: none; /* this removes the list marker */
+	border-top: 0px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	
+	padding-bottom: 10px;
+
+}
+ul.nav li { /* DREAMWEAVER. and modified*/
+	border-left: 2px solid #000000;
+	border-bottom: 2px solid #000000; 
+}
+
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 13px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	color: #000000;
+	background-color: #8FBCDB;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #294052; /* DREAMWEAVER. and modified*/
+	color: #FFF;
+}
+
+/* ~~ The footer ~~ */ 
+footer {  /* DREAMWEAVER. and modified*/
+	padding: 3px 3px;
+	background-color: #447294; 
+	border-color: #000000;
+	border: 2px;
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	font-size:x-small;
+}
+
+#left { 
+  float:left 
+}
+
+#right { 
+  float:right 
+}
+
+
+h1, h2, h3, p {
+margin-left: 32px;
+padding-left: 32px;
+}
+
+#table
+{
+font-size: 16px;
+background: white;
+width: 600px;
+border-collapse: collapse;
+}
+
+
+#table th
+{
+font-size: 16px;
+font-weight: normal;
+color: #668;
+padding: 8px 8px;
+border-bottom: 2px solid #667;
+}
+
+#table td
+{
+  color: #668;
+  padding: 5px 8px 5px 8px;
+}
+
+#visual{
+
+margin: 15px 15px 20px 20px;
+padding: 15px 15px 20px 20px;
+background: rgb(246, 246, 246);
+border-radius: 5px;
+
+}
+
+#center{
+width: 750px; 
+margin: 0 auto; 
+}
+
+
+#dbsetup{
+
+margin: 20px 20px 20px 20px;
+padding: 15px 15px 20px 20px;
+background: rgb(246, 246, 246);
+border-radius: 5px;
+width: 600px; margin: 0 auto; 
+}
+
+#eng{
+
+margin: 50px 50px 20px 20px;
+padding: 15px 15px 20px 20px;
+background: rgb(246, 246, 246);
+border-radius: 5px;
+width: 800px; margin: 0 auto; 
+
+}
+
+#visual, #dbsetup label{
+      font-size: 18px;
+      color: rgb(6, 106, 117);
+      padding: 10px 0 10px 0;
+      text-align: left;
+      padding-bottom: 8px;
+}
+
+#visual, #dbsetup input, select{
+      font-size: 18px;
+      color: rgb(6, 106, 117);
+      padding: 5px 5px 5px 5px;
+      text-align: left;
+      
+}
+
+#visualchart{
+
+    display: inline-block;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+   background: rgb(246, 246, 246);
+    border-radius: 5px;
+}
+
+.desc {
+
+  float: left;
+  display: block;
+  padding: 0px 10px 30px 10px;
+  margin: 15px 15px 10px 5px;
+
+}
+
+.button {  /* Initially from http://www.cssbuttongenerator.com/ then modified*/
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+  background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');  
+  background-color:#ededed;
+  -moz-border-radius:12px;
+  -webkit-border-radius:12px;
+  border-radius:12px;
+  border:1px solid #dcdcdc;
+    text-decoration: none !important;
+  float: left;
+  display:block;
+
+  color:#000000;
+  font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+  font-size:22px;
+  font-weight:bold;
+  padding: 5px 5px 7px 7px;
+  margin: 0 0 20px 30px;
+}
+
+.button:hover { /* Initially from http://www.cssbuttongenerator.com/ then modified*/
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color:#dfdfdf;
+}
+
+.loginbutton { /* Initially from http://www.cssbuttongenerator.com/ then modified*/
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+  background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color:#ededed;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#777777;
+  font-size:12px;
+  font-weight:bold;
+  margin: 6px 20px;
+  padding:4px 4px 4px 4px;
+  text-decoration:none;
+}
+
+
